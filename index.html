@@ -3,151 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Monvex Financial Services</title>
-<meta name="description" content="Monvex Financial Services - Finance, accounting, audit and business solutions across India.">
-
+<title>Monvex Financial Services | Finance & Business Solutions</title>
+<meta name="description" content="Monvex Financial Services - accounting, audit, finance, loan assistance and business support across India.">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;color:#172033;background:#f5f7fb;line-height:1.6}
-header{background:#071a35;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
-.logo{font-size:22px;font-weight:bold}.logo span{color:#28c58b}
-nav a{color:white;text-decoration:none;margin-left:20px}
-.hero{min-height:85vh;padding:90px 7%;display:flex;align-items:center;background:linear-gradient(135deg,#071a35,#124b82);color:white}
-.hero div{max-width:750px}
-.badge{display:inline-block;padding:7px 15px;border:1px solid #ffffff40;border-radius:30px;margin-bottom:20px}
-h1{font-size:50px;line-height:1.15;margin-bottom:20px}
-h1 span{color:#28c58b}
-.hero p{font-size:19px;margin-bottom:28px;color:#e4ebf4}
-.btn{display:inline-block;padding:13px 22px;border-radius:7px;text-decoration:none;font-weight:bold;margin-right:8px}
-.primary{background:#28c58b;color:#071a35}
-.secondary{border:1px solid white;color:white}
-section{padding:75px 7%}
-.title{text-align:center;margin-bottom:40px}
-.title h2{font-size:35px;color:#071a35}
-.title p{color:#687386}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-.card{background:white;padding:28px;border-radius:14px;box-shadow:0 8px 25px #14285012;border:1px solid #e7ebf2}
-.icon{font-size:32px;margin-bottom:10px}
-.card h3{color:#124b82;margin-bottom:8px}
-.card p{color:#687386}
-.about{background:white;text-align:center}
-.about-content{max-width:850px;margin:auto}
-.about-content p{color:#5d687a;font-size:17px}
-.stats{display:flex;justify-content:center;gap:20px;margin-top:35px;flex-wrap:wrap}
-.stat{background:#f5f7fb;padding:20px 40px;border-radius:10px}
-.stat strong{display:block;font-size:28px;color:#124b82}
-.contact{background:#071a35;color:white;text-align:center}
-.contact h2{font-size:35px;margin-bottom:12px}
-.contact p{color:#d9e2ee;margin-bottom:25px}
-footer{background:#041022;color:#ccd5e0;text-align:center;padding:25px}
-.whatsapp{position:fixed;right:20px;bottom:20px;background:#25d366;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:25px}
-@media(max-width:700px){
-nav{display:none}
-.hero{padding:65px 6%;min-height:80vh}
-h1{font-size:38px}
-.hero p{font-size:17px}
-section{padding:60px 6%}
-.title h2{font-size:30px}
-}
+:root{--navy:#071a35;--navy2:#0c2948;--green:#18c98a;--gold:#d8a936;--ink:#12233e;--muted:#66758b;--light:#f4f7fb;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--light);line-height:1.55}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(4,20,40,.96);backdrop-filter:blur(14px);color:#fff}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.5px}.mark{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,#e8f4ef,#18c98a);display:grid;place-items:center;color:#071a35;font-size:25px;font-weight:900}.brand small{display:block;color:#b9c8d8;font-size:10px;letter-spacing:2px;margin-top:1px}
+nav{display:flex;gap:28px;font-size:14px;font-weight:600}nav a{opacity:.9}nav a:hover{color:var(--green)}
+.nav-actions{display:flex;gap:10px;align-items:center}.nav-btn{padding:11px 17px;border-radius:9px;background:var(--green);color:#052039;font-weight:800;font-size:13px}.mail{width:40px;height:40px;border:1px solid #fff7;border-radius:50%;display:grid;place-items:center}
+.hero{min-height:610px;color:#fff;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(4,18,35,.96) 0%,rgba(4,24,42,.83) 42%,rgba(4,24,42,.30) 100%),url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero:after{content:"";position:absolute;width:720px;height:720px;border:2px solid #ffffff12;border-radius:50%;left:8%;top:-250px}
+.hero-inner{position:relative;z-index:2;min-height:610px;display:flex;align-items:center}
+.hero-copy{width:58%;padding:70px 0}.eyebrow{color:#e5b84b;letter-spacing:3px;font-size:12px;font-weight:900;margin-bottom:15px}
+.hero h1{font-family:Georgia,serif;font-size:clamp(48px,6vw,76px);line-height:.98;margin-bottom:22px}.hero h1 span{color:var(--green)}.hero p{font-size:17px;color:#e5edf6;max-width:590px;margin-bottom:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:9px;font-weight:800;font-size:14px;border:1px solid #fff6}.primary{background:var(--green);color:#052039;border-color:var(--green)}.outline{color:#fff}
+.hero-panel{margin-left:auto;width:310px;background:#071a35c9;border:1px solid #ffffff30;border-radius:18px;padding:24px;box-shadow:0 20px 60px #0005;backdrop-filter:blur(12px)}
+.hero-panel h3{font-size:20px;margin-bottom:16px}.quick{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #ffffff14;font-size:14px;font-weight:700}.quick:last-child{border:0}.qicon{width:36px;height:36px;border-radius:10px;background:#fff;color:var(--navy);display:grid;place-items:center}
+.trust{background:#fff;box-shadow:0 6px 25px #112b4d10}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:20px 0}.trust-item{text-align:center;border-right:1px solid #dbe2eb}.trust-item:last-child{border:0}.trust-item strong{display:block;font-size:19px}.trust-item span{color:var(--muted);font-size:12px}
+section{padding:78px 0}.section-head{margin-bottom:35px}.eyebrow-dark{color:#c18f20;letter-spacing:2px;font-size:11px;font-weight:900}.section-head h2{font-family:Georgia,serif;font-size:39px;line-height:1.05;margin:7px 0}.section-head p{color:var(--muted);max-width:620px}
+.services{background:#f5f8fc}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #e3e9f1;border-radius:15px;overflow:hidden;box-shadow:0 8px 25px #17345a0b;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 18px 35px #17345a16}.card-img{height:145px;background-size:cover;background-position:center}.card-body{padding:19px}.card-icon{width:42px;height:42px;margin-top:-38px;margin-bottom:11px;border-radius:50%;display:grid;place-items:center;background:var(--green);border:5px solid #fff;font-size:19px}.card h3{font-size:17px;margin-bottom:5px}.card p{font-size:13px;color:var(--muted)}
+.about{background:#fff}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-img{height:390px;border-radius:18px;background:url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85') center/cover;box-shadow:0 20px 45px #0d294718}.checks{display:grid;gap:12px;margin-top:22px}.check{display:flex;gap:10px;align-items:center;font-size:14px}.check b{width:22px;height:22px;border-radius:50%;background:var(--green);display:grid;place-items:center;font-size:12px}
+.vision{background:var(--navy);color:#fff;border-radius:15px;padding:25px}.vision h3{margin-bottom:12px}.vision p{font-size:13px;color:#cbd7e5}
+.process{background:#eef3f9}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{background:#fff;padding:22px;border-radius:13px;border:1px solid #e0e7f0;position:relative}.stepno{font-weight:900;color:#173e67;font-size:13px}.step h3{margin:6px 0}.step p{font-size:13px;color:var(--muted)}
+.cta{padding:70px 0;background:linear-gradient(90deg,rgba(4,19,37,.97),rgba(4,19,37,.72)),url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=85') center/cover;color:#fff}.cta .container{display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{font-family:Georgia,serif;font-size:42px}.cta p{color:#d5dfeb;margin-top:7px}.actions{display:flex;gap:10px;flex-shrink:0}
+footer{background:#041022;color:#cdd7e2;padding:35px 0 20px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:35px}.footer-brand{font-size:20px;font-weight:900;color:#fff}.footer-brand span{display:block;color:#aebdce;font-size:10px;letter-spacing:2px}.footer-col h4{color:#fff;margin-bottom:10px}.footer-col p,.footer-col a{font-size:13px;color:#aebbd0;display:block;margin:5px 0}.copy{border-top:1px solid #ffffff12;margin-top:25px;padding-top:18px;font-size:12px;text-align:center}
+.whatsapp{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:25px;z-index:80;box-shadow:0 8px 25px #0004;border:3px solid #fff}
+@media(max-width:850px){nav{display:none}.hero-inner{display:block;padding:55px 0}.hero-copy{width:100%;padding:20px 0}.hero-panel{display:none}.trust-grid{grid-template-columns:repeat(2,1fr);gap:15px}.trust-item:nth-child(2){border:0}.service-grid{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.about-img{height:300px}.steps{grid-template-columns:repeat(2,1fr)}.cta .container{display:block}.actions{margin-top:20px}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.nav-btn{display:none}.hero{min-height:700px}.hero-inner{min-height:700px}.hero h1{font-size:49px}.hero p{font-size:16px}.service-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.trust-grid{grid-template-columns:1fr 1fr}.trust-item{border:0}.cta h2{font-size:33px}.footer-grid{grid-template-columns:1fr}}
 </style>
 </head>
-
 <body>
+<header><div class="container nav">
+<a class="brand" href="#home"><div class="mark">M</div><div>MONVEX<small>FINANCIAL SERVICES</small></div></a>
+<nav><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+<div class="nav-actions"><a class="nav-btn" href="https://wa.me/918982940018">◉ WhatsApp Us</a><a class="mail" href="mailto:monvexfs@gmail.com">✉</a></div>
+</div></header>
 
-<header>
-<div class="logo">MONVEX <span>FINANCIAL SERVICES</span></div>
-<nav>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+<main id="home">
+<section class="hero"><div class="container hero-inner">
+<div class="hero-copy"><div class="eyebrow">PROFESSIONAL FINANCIAL SOLUTIONS</div><h1>You Manage<br>Success.<br><span>We Manage<br>Numbers.</span></h1><p>Finance, accounting, audit and business support solutions designed to help individuals and businesses move forward with clarity and confidence.</p><a class="btn primary" href="#contact">Get a Free Consultation →</a> <a class="btn outline" href="#services">Explore Our Services</a></div>
+<div class="hero-panel"><h3>Financial clarity<br>for better decisions.</h3><div class="quick"><div class="qicon">▣</div>Accounting & Finance</div><div class="quick"><div class="qicon">✓</div>Audit & Compliance</div><div class="quick"><div class="qicon">♟</div>Business Support</div><div class="quick"><div class="qicon">₹</div>Loan Assistance</div></div>
+</div></section>
 
-<section class="hero" id="home">
-<div>
-<div class="badge">Professional Financial & Business Solutions</div>
-<h1>You Manage Success.<br><span>We Manage Numbers.</span></h1>
-<p>Helping individuals and businesses with accounting, audit, finance, loan assistance and business support solutions across India.</p>
-<a class="btn primary" href="#contact">Get Consultation</a>
-<a class="btn secondary" href="#services">Our Services</a>
-</div>
-</section>
+<div class="trust"><div class="container trust-grid"><div class="trust-item"><strong>6+</strong><span>Core Services</span></div><div class="trust-item"><strong>Pan India</strong><span>Service Coverage</span></div><div class="trust-item"><strong>100+</strong><span>Client Support</span></div><div class="trust-item"><strong>24/7</strong><span>Online Enquiry</span></div></div></div>
 
-<section id="services">
-<div class="title">
-<h2>Our Services</h2>
-<p>Practical solutions for individuals and businesses</p>
-</div>
+<section class="services" id="services"><div class="container"><div class="section-head"><div class="eyebrow-dark">OUR SERVICES</div><h2>Complete Financial Solutions<br>for Every Need</h2><p>Practical, reliable and professional financial services for individuals, startups and growing businesses.</p></div>
+<div class="service-grid">
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=900&q=80')"></div><div class="card-body"><div class="card-icon">▦</div><h3>Accounting & Bookkeeping</h3><p>Organised records and financial reporting support.</p></div></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=900&q=80')"></div><div class="card-body"><div class="card-icon">⌁</div><h3>Audit Services</h3><p>Audit and compliance support with proper documentation.</p></div></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=900&q=80')"></div><div class="card-body"><div class="card-icon">₹</div><h3>Loan Assistance</h3><p>Support with loan requirements and financial documentation.</p></div></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80')"></div><div class="card-body"><div class="card-icon">▥</div><h3>Business Setup</h3><p>Guidance for registration and essential business setup requirements.</p></div></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80')"></div><div class="card-body"><div class="card-icon">↗</div><h3>Financial Analysis</h3><p>Financial insights to understand and improve performance.</p></div></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1554224155-a1487473ffd2?auto=format&fit=crop&w=900&q=80')"></div><div class="card-body"><div class="card-icon">▤</div><h3>Tax & Compliance</h3><p>Support for tax filing, registrations and regulatory compliance.</p></div></div>
+</div></div></section>
 
-<div class="services">
+<section class="about" id="about"><div class="container about-grid"><div class="about-img"></div><div><div class="eyebrow-dark">ABOUT MONVEX</div><h2 style="font:39px/1.05 Georgia,serif;margin:7px 0 15px">Your Financial Partner<br>for a Stronger Tomorrow</h2><p style="color:var(--muted)">We focus on clear documentation, practical financial support and professional assistance for businesses and individuals across India.</p><div class="checks"><div class="check"><b>✓</b> Professional and structured approach</div><div class="check"><b>✓</b> Business-focused financial support</div><div class="check"><b>✓</b> Clear documentation and communication</div><div class="check"><b>✓</b> Pan-India service capability</div></div></div></div></section>
 
-<div class="card">
-<div class="icon">📊</div>
-<h3>Accounting & Bookkeeping</h3>
-<p>Accounting, bookkeeping, financial records and reporting support.</p>
-</div>
+<section class="process" id="process"><div class="container"><div class="section-head" style="text-align:center"><div class="eyebrow-dark">OUR PROCESS</div><h2>Simple. Clear. Professional.</h2><p style="margin:auto">We keep the process straightforward from enquiry to execution.</p></div><div class="steps"><div class="step"><div class="stepno">01 — UNDERSTAND</div><h3>Understand</h3><p>We understand your requirement and financial objective.</p></div><div class="step"><div class="stepno">02 — PLAN</div><h3>Assess</h3><p>We review the requirement and identify the appropriate solution.</p></div><div class="step"><div class="stepno">03 — EXECUTE</div><h3>Support</h3><p>We assist with documentation, coordination and execution.</p></div><div class="step"><div class="stepno">04 — DELIVER</div><h3>Complete</h3><p>We work toward a clear and organised completion.</p></div></div></div></section>
 
-<div class="card">
-<div class="icon">🔍</div>
-<h3>Audit Services</h3>
-<p>Audit and financial review assistance with documentation and compliance.</p>
-</div>
+<section class="cta" id="contact"><div class="container"><div><div class="eyebrow">LET'S WORK TOGETHER</div><h2>Have a Financial Requirement?</h2><p>Tell us what you need. Our team will help you understand the next step.</p></div><div class="actions"><a class="btn primary" href="https://wa.me/918982940018">◉ WhatsApp Us</a><a class="btn outline" href="mailto:monvexfs@gmail.com">✉ Email Us</a></div></div></section>
+</main>
 
-<div class="card">
-<div class="icon">💰</div>
-<h3>Loan Assistance</h3>
-<p>Assistance with loan requirements and financial documentation.</p>
-</div>
-
-<div class="card">
-<div class="icon">🏢</div>
-<h3>Business Setup</h3>
-<p>Support for registration, documentation and business setup requirements.</p>
-</div>
-
-<div class="card">
-<div class="icon">📈</div>
-<h3>Financial Analysis</h3>
-<p>Financial analysis and business insights to understand performance.</p>
-</div>
-
-<div class="card">
-<div class="icon">🧾</div>
-<h3>Tax & Compliance</h3>
-<p>Support for routine tax, compliance and financial documentation.</p>
-</div>
-
-</div>
-</section>
-
-<section class="about" id="about">
-<div class="title"><h2>About Monvex</h2></div>
-<div class="about-content">
-<p>Monvex Financial Services provides finance, accounting, audit and business support solutions to clients across India. Our focus is on practical assistance, clear documentation and reliable financial support.</p>
-
-<div class="stats">
-<div class="stat"><strong>India</strong>Service Coverage</div>
-<div class="stat"><strong>6+</strong>Services</div>
-<div class="stat"><strong>24/7</strong>Online Enquiry</div>
-</div>
-</div>
-</section>
-
-<section class="contact" id="contact">
-<h2>Let's Discuss Your Requirement</h2>
-<p>Contact Monvex Financial Services for your finance or business requirement.</p>
-<a class="btn primary" href="mailto:monvexfs@gmail.com">Email Us</a>
-<a class="btn secondary" href="https://wa.me/91XXXXXXXXXX">WhatsApp Us</a>
-<p style="margin-top:25px">Email: monvexfs@gmail.com</p>
-</section>
-
-<footer>
-© 2026 Monvex Financial Services. All Rights Reserved.
-</footer>
-
-<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX">💬</a>
-
+<footer><div class="container"><div class="footer-grid"><div><div class="footer-brand">MONVEX<span>FINANCIAL SERVICES</span></div><p style="margin-top:12px">Professional finance, accounting, audit and business support solutions.</p></div><div class="footer-col"><h4>Quick Links</h4><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div><div class="footer-col"><h4>Contact</h4><a href="mailto:monvexfs@gmail.com">monvexfs@gmail.com</a><p>Pan India</p></div></div><div class="copy">© 2026 Monvex Financial Services. All Rights Reserved.</div></div></footer>
+<a class="whatsapp" href="https://wa.me/918982940018" aria-label="WhatsApp">◉</a>
 </body>
 </html>
