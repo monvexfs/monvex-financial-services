@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products & Services | MONVEX Financial Services</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f7fa;
+    color:#172033;
+}
+header{
+    background:#071a33;
+    color:white;
+    padding:22px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo{
+    font-size:24px;
+    font-weight:700;
+}
+.logo span{color:#35d07f}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:24px;
+}
+.hero{
+    background:#071a33;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+.hero h1{
+    font-size:42px;
+    margin:0 0 15px;
+}
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#d9e2ef;
+    line-height:1.7;
+}
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+.card{
+    background:white;
+    border-radius:16px;
+    padding:30px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    transition:.25s;
+}
+.card:hover{
+    transform:translateY(-5px);
+}
+.card h2{
+    margin-top:0;
+}
+.card p{
+    color:#64748b;
+    line-height:1.6;
+}
+.card a{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    background:#071a33;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+.account{border-top:5px solid #35d07f}
+.audit{border-top:5px solid #6c63ff}
+.loan{border-top:5px solid #f59e0b}
+.startup{border-top:5px solid #ef4444}
+
+footer{
+    background:#071a33;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    margin-top:70px;
+}
+footer a{
+    color:white;
+    margin:0 10px;
+}
+@media(max-width:700px){
+    header{display:block;text-align:center}
+    nav{margin-top:15px}
+    nav a{margin:0 8px}
+    .hero h1{font-size:32px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MONVEX<span> FINANCIAL SERVICES</span></div>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Products & Services</h1>
+    <p>
+        Explore our financial, accounting, audit, loan and business
+        startup solutions designed for individuals, professionals
+        and businesses.
+    </p>
+</section>
+
+<main class="container">
+
+<div class="grid">
+
+    <div class="card account">
+        <h2>Accounting Products</h2>
+        <p>
+            Accounting, GST, payroll and business management solutions
+            for businesses of different sizes.
+        </p>
+        <a href="accounting/index.html">View Products →</a>
+    </div>
+
+    <div class="card audit">
+        <h2>Audit Products</h2>
+        <p>
+            Professional audit, compliance, technical and business
+            review services.
+        </p>
+        <a href="audit/index.html">View Products →</a>
+    </div>
+
+    <div class="card loan">
+        <h2>Loans</h2>
+        <p>
+            Explore loan solutions for personal, education, vehicle,
+            home, business and MSME requirements.
+        </p>
+        <a href="loans/index.html">View Loan Products →</a>
+    </div>
+
+    <div class="card startup">
+        <h2>Business Startup</h2>
+        <p>
+            Complete startup support from incorporation and licensing
+            to branding, websites and business planning.
+        </p>
+        <a href="business-startup/index.html">View Products →</a>
+    </div>
+
+</div>
+
+</main>
+
+<footer>
+    <p>MONVEX FINANCIAL SERVICES</p>
+    <p>Professional finance, accounting, audit and business support solutions.</p>
+
+    <p>
+        <a href="mailto:monvexfs@gmail.com">Email</a>
+        <a href="https://wa.me/918982940018">WhatsApp</a>
+        <a href="../index.html">Home</a>
+    </p>
+
+    <p>© 2026 Monvex Financial Services. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
